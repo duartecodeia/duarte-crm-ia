@@ -1,53 +1,50 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+    <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-slate-950 text-slate-50">
+      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex mb-12">
+        <p className="flex w-full justify-center border-b border-slate-800 bg-slate-900/50 pb-6 pt-8 backdrop-blur-2xl lg:static lg:w-auto lg:rounded-xl lg:border lg:p-4">
           Duarte CRM IA&nbsp;
-          <code className="font-bold">v0.1.0</code>
+          <code className="font-bold text-indigo-400">v0.1.0</code>
         </p>
       </div>
 
-      <div className="relative flex place-items-center mt-12">
-        <h1 className="text-4xl font-bold text-center">
+      <div className="text-center mb-16">
+        <h1 className="text-5xl font-extrabold tracking-tight mb-4">
           Bem-vindo ao seu <br />
-          <span className="text-indigo-500">CRM Conversacional</span>
+          <span className="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+            CRM Conversacional
+          </span>
         </h1>
+        <p className="text-slate-400 text-lg">Aprendizado de UI/UX com Inteligência Artificial</p>
       </div>
 
-      <div className="mt-12 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:text-left gap-6">
-        <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
-          <h2 className="mb-3 text-2xl font-semibold text-emerald-400">
-            Pipeline{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
+        {/* Card Pipeline */}
+        <div className="group rounded-2xl border border-slate-800 bg-slate-900/50 p-6 transition-all hover:border-emerald-500/50 hover:bg-slate-900">
+          <h2 className="mb-3 text-2xl font-semibold text-emerald-400 flex items-center gap-2">
+            Pipeline <span>→</span>
           </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
+          <p className="text-sm text-slate-400 leading-relaxed">
             Gerencie seus leads com um Kanban intuitivo e rápido.
           </p>
         </div>
 
-        <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
-          <h2 className="mb-3 text-2xl font-semibold text-indigo-400">
-            Omnichannel{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+        {/* Card Omnichannel */}
+        <div className="group rounded-2xl border border-slate-800 bg-slate-900/50 p-6 transition-all hover:border-indigo-500/50 hover:bg-slate-900">
+          <h2 className="mb-3 text-2xl font-semibold text-indigo-400 flex items-center gap-2">
+            Omnichannel <span>→</span>
           </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
+          <p className="text-sm text-slate-400 leading-relaxed">
             Centralize WhatsApp e Instagram em uma única tela.
           </p>
         </div>
 
-        <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
-          <h2 className="mb-3 text-2xl font-semibold text-amber-400">
-            Webhooks{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+        {/* Card Webhooks */}
+        <div className="group rounded-2xl border border-slate-800 bg-slate-900/50 p-6 transition-all hover:border-amber-500/50 hover:bg-slate-900">
+          <h2 className="mb-3 text-2xl font-semibold text-amber-400 flex items-center gap-2">
+            Webhooks <span>→</span>
           </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
+          <p className="text-sm text-slate-400 leading-relaxed">
             Capture abandonos de carrinho e novos leads automaticamente.
           </p>
         </div>
