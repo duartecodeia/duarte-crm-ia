@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-slate-950 text-slate-50">
@@ -20,17 +22,17 @@ export default function Home() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
         {/* Card Pipeline */}
-        <div className="group rounded-2xl border border-slate-800 bg-slate-900/50 p-6 transition-all hover:border-emerald-500/50 hover:bg-slate-900">
+        <Link href="/pipeline" className="group rounded-2xl border border-slate-800 bg-slate-900/50 p-6 transition-all hover:border-emerald-500/50 hover:bg-slate-900">
           <h2 className="mb-3 text-2xl font-semibold text-emerald-400 flex items-center gap-2">
             Pipeline <span>→</span>
           </h2>
           <p className="text-sm text-slate-400 leading-relaxed">
             Gerencie seus leads com um Kanban intuitivo e rápido.
           </p>
-        </div>
+        </Link>
 
         {/* Card Omnichannel */}
-        <div className="group rounded-2xl border border-slate-800 bg-slate-900/50 p-6 transition-all hover:border-indigo-500/50 hover:bg-slate-900">
+        <div className="group rounded-2xl border border-slate-800 bg-slate-900/50 p-6 transition-all hover:border-indigo-500/50 hover:bg-slate-900 opacity-50 cursor-not-allowed">
           <h2 className="mb-3 text-2xl font-semibold text-indigo-400 flex items-center gap-2">
             Omnichannel <span>→</span>
           </h2>
@@ -40,7 +42,7 @@ export default function Home() {
         </div>
 
         {/* Card Webhooks */}
-        <div className="group rounded-2xl border border-slate-800 bg-slate-900/50 p-6 transition-all hover:border-amber-500/50 hover:bg-slate-900">
+        <div className="group rounded-2xl border border-slate-800 bg-slate-900/50 p-6 transition-all hover:border-amber-500/50 hover:bg-slate-900 opacity-50 cursor-not-allowed">
           <h2 className="mb-3 text-2xl font-semibold text-amber-400 flex items-center gap-2">
             Webhooks <span>→</span>
           </h2>
